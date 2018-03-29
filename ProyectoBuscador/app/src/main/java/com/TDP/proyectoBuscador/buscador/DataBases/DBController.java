@@ -14,6 +14,7 @@ import com.TDP.proyectoBuscador.buscador.CommerceAndDesired.ProductService;
 import com.TDP.proyectoBuscador.buscador.Users.User;
 import java.util.ArrayList;
 
+/*Clase singleton que maneja la base de datos y las inserciones*/
 
 public class DBController {
 

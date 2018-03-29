@@ -4,6 +4,8 @@ import java.util.HashMap;
 import java.util.ArrayList;
 import java.util.Map;
 
+
+/*Clase abstracta que generaliza a los comercios*/
 public abstract class Business {
 
     protected String name;

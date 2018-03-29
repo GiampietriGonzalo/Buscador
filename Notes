@@ -1,7 +1,25 @@
+PENDIENTE:
+
++Cambiar la inserción (¿y búsqueda?) de comercios por nombre a por dirección(coordeandas o nombre de dir).
+
++Reemplazar calidad del prod en un comercio por stock.
+
++Ver como implementar el tema de stock con los usuarios y comerciantes.
+
++Implementar usuarios.
+
++Defninir bien el algoritmo de búsqueda utilizando etiquetas.
+
+
+
+
+
+
 A useful set of APIs is available in the SQLiteOpenHelper class. When you use this class to obtain references to your database, the system performs the potentially long-running operations of creating and updating the database only when needed and not during app startup. All you need to do is call getWritableDatabase() or getReadableDatabase().
 
 Because they can be long-running, be sure that you call getWritableDatabase() or getReadableDatabase() in a background thread, such as with AsyncTask or IntentService.
 
 
 Sistema de votos y puntos para insentivar a los usuarios a votar por comercios aun no checkeados.
+
 

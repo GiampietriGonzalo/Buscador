@@ -18,7 +18,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".Activities.AddBusinessActivity" />
-        <activity android:name=".Activities.AddDesiredActivity"></activity>
+        <activity android:name=".Activities.AddItemActivity"></activity>
     </application>
 
 </manifest>

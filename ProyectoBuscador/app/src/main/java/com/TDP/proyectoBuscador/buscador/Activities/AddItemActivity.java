@@ -5,7 +5,7 @@ import android.os.Bundle;
 
 import com.TDP.proyectoBuscador.buscador.R;
 
-public class AddDesiredActivity extends AppCompatActivity {
+public class AddItemActivity extends AppCompatActivity {
 
 
     protected void onCreate(Bundle savedInstanceState) {

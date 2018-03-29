@@ -3,7 +3,7 @@ package com.TDP.proyectoBuscador.buscador.CommerceAndDesired;
 import java.io.Serializable;
 
 /**
- *
+ *Calles de una ciudad.
  */
 
 public class Street{

@@ -2,6 +2,7 @@ package com.TDP.proyectoBuscador.buscador.CommerceAndDesired;
 
 import android.database.sqlite.SQLiteDatabase;
 
+/*Clase abstracta que generaliza a las ciudades*/
 public abstract class Place {
 
     protected String party;

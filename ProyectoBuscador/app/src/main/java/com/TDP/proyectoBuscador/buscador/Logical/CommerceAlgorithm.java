@@ -1,6 +1,8 @@
 package com.TDP.proyectoBuscador.buscador.Logical;
 
 
+/*Clase pensada para implementar el algoritmo de búsqueda de los comercios a trabvés de un producto*/
+
 public class CommerceAlgorithm extends SearchAlgorithm {
 
 

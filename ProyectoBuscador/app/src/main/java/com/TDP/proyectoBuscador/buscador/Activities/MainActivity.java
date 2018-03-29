@@ -21,6 +21,8 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
+/*Actividad principal del buscador*/
+
 public class MainActivity extends AppCompatActivity {
 
 
@@ -47,6 +49,10 @@ public class MainActivity extends AppCompatActivity {
         addBusinessButton.setOnClickListener(new AddBusinessListener());
 
 
+        /*
+        * Creacion de la ciudad Bahía Blanca, el producto inicial tornillo y el local donde se encuentra
+        * */
+
         Place BahiaBlanca= new City(new Street("Socrates",2148,false),"Bahia Blanca","BuenosAires","BahiaBlanca",8000);
         BahiaBlanca.setID(1);
         ArrayList<String> canonicalLocation= new ArrayList<String>();
@@ -72,11 +78,13 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+
+    /**
+     * Listener del boton buscar.
+     * */
     public class SearchListener implements View.OnClickListener{
 
         public void onClick(View view) {
-
-
 
             String toSearch;
             Item myDesired=null;
@@ -120,7 +128,9 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-
+    /**
+     * Listener del botón agregar comercio
+     * */
     public class AddBusinessListener implements View.OnClickListener{
 
         public void onClick(View view) {

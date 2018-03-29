@@ -8,6 +8,8 @@ import android.provider.BaseColumns;
 
 import java.util.ArrayList;
 
+/*Tabla donde se guardan los rubros*/
+
 public class SectorTable {
 
     private final static String[] columns={Columns.ID, Columns.nameCol ,Columns.quantityCol};

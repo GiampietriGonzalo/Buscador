@@ -4,6 +4,8 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.provider.BaseColumns;
 
+/*Tabla de usuarios*/
+
 public class UsersTable {
 
     //Attributes

@@ -4,6 +4,8 @@ package com.TDP.proyectoBuscador.buscador.CommerceAndDesired;
 import java.util.LinkedList;
 import java.util.List;
 
+/*Clase abstracta que generaliza a los productos y servicios*/
+
 public abstract class Item {
 
     protected String name;
