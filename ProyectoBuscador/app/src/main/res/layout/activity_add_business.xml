@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.TDP.proyectoBuscador.buscador.Activities.AddBusinessActivity">
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/TILName"
+        android:layout_width="279dp"
+        android:layout_height="65dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/TIName"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:hint="Nombre"
+            android:textColor="@android:color/black"
+            tools:textColor="@android:color/black" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/TILStreet"
+        android:layout_width="279dp"
+        android:layout_height="65dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TILName">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/TIStreet"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:hint="Calle"
+            android:textColor="@android:color/black" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/TILNumber"
+        android:layout_width="136dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TILStreet">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/TINumber"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:hint="Número"
+            android:textColor="@android:color/black" />
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:id="@+id/TWSector"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="25dp"
+        android:text="Rubro"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TWType" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/TILTelephone"
+        android:layout_width="279dp"
+        android:layout_height="65dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TILNumber">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/TITelephone"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:hint="Teléfono"
+            android:textColor="@android:color/black" />
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:id="@+id/TWParkimeter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="15dp"
+        android:text="Parquímetro"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SPSector" />
+
+    <CheckBox
+        android:id="@+id/CHKParkimeter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="170dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/TWParkimeter"
+        app:layout_constraintTop_toBottomOf="@+id/SPSector" />
+
+    <Spinner
+        android:id="@+id/SPSector"
+        android:layout_width="220dp"
+        android:layout_height="33dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/TWSector"
+        app:layout_constraintTop_toBottomOf="@+id/SPType" />
+
+    <Button
+        android:id="@+id/BTNSave"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:layout_marginBottom="40dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="103dp"
+        android:layout_marginTop="85dp"
+        android:text="Guardar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/BTNCancel"
+        app:layout_constraintTop_toBottomOf="@+id/SPSector" />
+
+    <Button
+        android:id="@+id/BTNCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:layout_marginBottom="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="45dp"
+        android:text="Cancelar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TWParkimeter" />
+
+    <TextView
+        android:id="@+id/TWType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="18dp"
+        android:text="Tipo"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TILTelephone" />
+
+    <Spinner
+        android:id="@+id/SPType"
+        android:layout_width="220dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/TWType"
+        app:layout_constraintTop_toBottomOf="@+id/TILTelephone" />
+
+</android.support.constraint.ConstraintLayout>

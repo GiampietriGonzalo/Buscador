@@ -1,0 +1,840 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>7</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>497</x>
+      <y>196</y>
+      <w>126</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>/SearchAlgotihm+/
+--
+--
+/#search(): Result/
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>329</x>
+      <y>196</y>
+      <w>154</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>/Finder*/
+--
+#algorithm: SearchAlgorithm
+#state: FinderState
+--
+/#find(): void/
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>0</x>
+      <y>280</y>
+      <w>168</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>FinderAvailable
+--
+FinderAvailable(Finder finder)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>175</x>
+      <y>280</y>
+      <w>147</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>FinderBusy
+--
+FinderBusy(Finder finder)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>98</x>
+      <y>182</y>
+      <w>147</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>/FinderState*/
+--
+finder: Finder
+--
+free():void
+occupy():void
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>84</x>
+      <y>231</y>
+      <w>105</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>130.0;10.0;10.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>175</x>
+      <y>231</y>
+      <w>63</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;70.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>343</x>
+      <y>294</y>
+      <w>126</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>CommerceFinder
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>497</x>
+      <y>294</y>
+      <w>126</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>CommerceAlgorithm
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>84</x>
+      <y>343</y>
+      <w>147</w>
+      <h>35</h>
+    </coordinates>
+    <panel_attributes>/Result+/
+--
+--
+/#isSuccessful(): boolean/
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>63</x>
+      <y>420</y>
+      <w>189</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>CommerceResult
+--
+-results: PositionList&lt;Pack&gt;
+--
+CommerceResult()
+getResults(): PositionList&lt;Pack&gt;
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>147</x>
+      <y>371</y>
+      <w>21</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>315</x>
+      <y>343</y>
+      <w>154</w>
+      <h>98</h>
+    </coordinates>
+    <panel_attributes>/Search*/
+--
+#id: int
+#result: Result
+#finder: Finder
+--
+Search(int id, Finder finder)
+getResult(): Result
+getId(): int</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>560</x>
+      <y>245</y>
+      <w>21</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>385</x>
+      <y>245</y>
+      <w>21</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>315</x>
+      <y>469</y>
+      <w>154</w>
+      <h>35</h>
+    </coordinates>
+    <panel_attributes>DesiredSearch
+--
+DesiredSearch(int id)
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>378</x>
+      <y>434</y>
+      <w>21</w>
+      <h>49</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>63</x>
+      <y>518</y>
+      <w>196</w>
+      <h>175</h>
+    </coordinates>
+    <panel_attributes>/Desired*/
+--
+#desiredId: int
+#name: String
+#searches: String
+#commerces: Hashtable&lt;String,Pack&gt;
+#tag: List&lt;String&gt;
+--
+Desired(int desiredId, String name)
+getCommerces(): Hashtable&lt;String,Pack&gt;
+getSearches(): int
+getName():String
+getId(): int
+setId(int if): void
+setCommerces(Hashtable commerces): void
+setSearches(int s):void
+
+
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>63</x>
+      <y>749</y>
+      <w>196</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>ProductService
+--
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>133</x>
+      <y>686</y>
+      <w>21</w>
+      <h>77</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;90.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>798</x>
+      <y>189</y>
+      <w>231</w>
+      <h>91</h>
+    </coordinates>
+    <panel_attributes>/Pack*/
+--
+#commerce: Commerce
+#price: int 
+--
+Pack(Commerce commerce, int price)
+getCommerce(): Commerce
+getPrice(): int
+setCommerce(Commerce commerce): void
+setPrice(int price): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>651</x>
+      <y>350</y>
+      <w>273</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>ProductPack
+--
+-stock:int
+--
+ProductPack(Commerce commerce, int price, int stock)
+getStock():int
+setStock(int newStock):void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>931</x>
+      <y>350</y>
+      <w>301</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>ServicePack
+--
+-quality:int
+--
+ServicePack(Commerce commerce, int price, int quality)
+getQuality():int
+setQuality(int newQuality): void
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>777</x>
+      <y>273</y>
+      <w>140</w>
+      <h>91</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>180.0;10.0;10.0;110.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>903</x>
+      <y>273</y>
+      <w>133</w>
+      <h>91</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;170.0;110.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>504</x>
+      <y>560</y>
+      <w>217</w>
+      <h>147</h>
+    </coordinates>
+    <panel_attributes>/Commerce*/
+--
+#name: String
+#commerceId: int
+#location: PositionList&lt;Place&gt;
+#telephone: String
+#disered: PositionList&lt;Disered&gt; 
+#reputation: Float
+--
+getId():int
+getLocation(): Place
+getTelephone():String
+setTelephone(String newTelephone):void
+getDisered():PositionList&lt;Disered&gt;
+addDisered(Disered newDisered):void
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>469</x>
+      <y>700</y>
+      <w>126</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>160.0;10.0;10.0;80.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>581</x>
+      <y>700</y>
+      <w>161</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;210.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>399</x>
+      <y>756</y>
+      <w>147</w>
+      <h>49</h>
+    </coordinates>
+    <panel_attributes>Shop
+--
+-category: String
+--
+getCategory():String
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1603</x>
+      <y>196</y>
+      <w>147</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>/Place*/
+--
+#party: String
+#state:String
+--
+Place(Party party,State state)
+getParty(): String
+getState(): String</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1274</x>
+      <y>406</y>
+      <w>364</w>
+      <h>98</h>
+    </coordinates>
+    <panel_attributes>City
+--
+-street: Street
+-name: String
+-postalCode: int
+--
+City(Street street, String party, String state,String name, int postalCode)
+getName(): String
+getPostalCode(): int
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1673</x>
+      <y>406</y>
+      <w>371</w>
+      <h>98</h>
+    </coordinates>
+    <panel_attributes>Rural
+--
+-road:String
+-kilometer: int
+--
+Rural(Street street, String party, String state,String road, int kilometer)
+getRute():String
+getKilometer():int</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1295</x>
+      <y>196</y>
+      <w>245</w>
+      <h>105</h>
+    </coordinates>
+    <panel_attributes>Street
+--
+-name:String
+-number: int
+-parkingMeter:boolean
+--
+Street(String name, int number, boolean parkingMeter)
+getName():String
+getNumber():String
+parkingMeter():boolean
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1561</x>
+      <y>273</y>
+      <w>119</w>
+      <h>147</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>150.0;10.0;10.0;190.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1680</x>
+      <y>273</y>
+      <w>77</w>
+      <h>147</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;90.0;190.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>168</x>
+      <y>882</y>
+      <w>147</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>/SQLiteOpenHelper*/</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>161</x>
+      <y>994</y>
+      <w>147</w>
+      <h>91</h>
+    </coordinates>
+    <panel_attributes>DBController
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1127</x>
+      <y>546</y>
+      <w>203</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>/Account*/
+--
+#name: String
+#password: String
+--
+Account(String newName)
+getName(): String
+setName(String name): void
+getPassword() String
+setPassword(String newPassword)
+addCommerce(String name)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>945</x>
+      <y>777</y>
+      <w>147</w>
+      <h>49</h>
+    </coordinates>
+    <panel_attributes>User
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1141</x>
+      <y>777</y>
+      <w>147</w>
+      <h>49</h>
+    </coordinates>
+    <panel_attributes>Merchant
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1330</x>
+      <y>777</y>
+      <w>147</w>
+      <h>49</h>
+    </coordinates>
+    <panel_attributes>Admin
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1001</x>
+      <y>679</y>
+      <w>224</w>
+      <h>112</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>300.0;10.0;10.0;140.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1218</x>
+      <y>679</y>
+      <w>189</w>
+      <h>112</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;250.0;140.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1211</x>
+      <y>679</y>
+      <w>21</w>
+      <h>112</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;140.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>224</x>
+      <y>896</y>
+      <w>21</w>
+      <h>112</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;140.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>665</x>
+      <y>749</y>
+      <w>147</w>
+      <h>119</h>
+    </coordinates>
+    <panel_attributes>Entrepreneur
+--
+-compromise:int
+-quality
+--
+Entrepreneuer():void
+getQuality():float
+setQuality(Float f): void
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>2219</x>
+      <y>161</y>
+      <w>147</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>/Visitor*/
+--
+-id: Long
+-ClassAttribute: Long_
+--
+/visitCityTable(CityTable t):void/
+/visitRuralTable(RuralTable r):void/
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>2569</x>
+      <y>0</y>
+      <w>147</w>
+      <h>133</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Stereotype&gt;&gt;
+Package::FatClass
+{Some Properties}
+--
+-id: Long
+_-ClassAttribute: Long_
+--
+#Operation(i: int): int
+/+AbstractOperation()/
+--
+Responsibilities
+-- Resp1
+*-- Resp2*</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>2170</x>
+      <y>287</y>
+      <w>112</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>VisitorTableCity</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>2317</x>
+      <y>287</y>
+      <w>112</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>VisitorRuralCity</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>2240</x>
+      <y>224</y>
+      <w>63</w>
+      <h>77</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>70.0;10.0;10.0;90.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>2289</x>
+      <y>224</y>
+      <w>105</w>
+      <h>77</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;130.0;90.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1729</x>
+      <y>553</y>
+      <w>147</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>/PlaceTable*/
+--
+--
+/Accept(Visitor v):void/
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1624</x>
+      <y>665</y>
+      <w>147</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>CityTable
+--
+Accept(Visitor v)
+InsertCity():void
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1862</x>
+      <y>658</y>
+      <w>147</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>RuralTable
+--
+Accept(Visitor v)
+InsertRural():void
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1442</x>
+      <y>210</y>
+      <w>133</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;170.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1680</x>
+      <y>588</y>
+      <w>126</w>
+      <h>91</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>160.0;10.0;10.0;110.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1792</x>
+      <y>588</y>
+      <w>154</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;200.0;100.0</additional_attributes>
+  </element>
+</diagram>

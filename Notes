@@ -1,0 +1,7 @@
+A useful set of APIs is available in the SQLiteOpenHelper class. When you use this class to obtain references to your database, the system performs the potentially long-running operations of creating and updating the database only when needed and not during app startup. All you need to do is call getWritableDatabase() or getReadableDatabase().
+
+Because they can be long-running, be sure that you call getWritableDatabase() or getReadableDatabase() in a background thread, such as with AsyncTask or IntentService.
+
+
+Sistema de votos y puntos para insentivar a los usuarios a votar por comercios aun no checkeados.
+
